@@ -1,0 +1,21 @@
+% this is my first package
+% 
+% (c) Libellule Silber
+%
+%% This program can be redistributed and/or modified under the terms
+%% of the LaTeX Project Public License Distributed 
+% 
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{MyPhysics}
+  [2023/05/19 v0.01 LaTeX package for my own purpose]
+ 
+\newcommand{\qline}{\rule{\linewidth}{1pt}\\}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pdd}[2]{\frac{\partial^2 #1}{\partial #2 ^2}}
+\newcommand{\bra}[1]{\left< #1 \right|}
+\newcommand{\ket}[1]{\left| #1 \right>}
+\newcommand{\braket}[2]{\left< #1 | #2 \right>}
+
+\endinput
+%%
+%% End of file `MyPhysics.sty'.

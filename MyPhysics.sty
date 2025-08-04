@@ -7,14 +7,35 @@
 % 
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{MyPhysics}
-  [2023/05/19 v0.01 LaTeX package for my own purpose]
+  [2023/11/08 v0.02 LaTeX package for my own purpose]
+\usepackage[bookmarks,hypertexnames=false,debug]{hyperref}
+\usepackage{bookmark}
  
 \newcommand{\qline}{\rule{\linewidth}{1pt}\\}
 \newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\Pd}[2]{\left( \frac{\partial #1}{\partial #2} \right)}
 \newcommand{\pdd}[2]{\frac{\partial^2 #1}{\partial #2 ^2}}
 \newcommand{\bra}[1]{\left< #1 \right|}
 \newcommand{\ket}[1]{\left| #1 \right>}
 \newcommand{\braket}[2]{\left< #1 | #2 \right>}
+\newcommand{\ave}[1]{\left< #1 \right>}
+\newcommand{\qint}{\int_{-\infty}^{\infty}}
+\newcommand{\la}{\mathcal{L}}
+\newcommand{\ra}{\mathcal{S}}
+\newcommand{\vphi}{\phi (\vec{x},t)}
+\newcommand{\qPsi}{\Psi (x,t)}
+\newcommand{\kpsi}{\ket{\psi}}
+\newcommand{\kpsii}[1]{\ket{\psi (#1)}}
+\newcommand{\bpsi}{\bra{\psi }}
+\newcommand{\bpsii}[1]{\bra{\psi (#1)}}
+\newcommand{\hsec}[1]{\phantomsection
+\addcontentsline{toc}{section}{#1}
+\section*{#1}}
+\newcommand{\hitem}[1]{\phantomsection
+\addcontentsline{toc}{section}{#1}
+\item #1 \\ \qline}
+
+
 
 \endinput
 %%

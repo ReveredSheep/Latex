@@ -7,9 +7,10 @@
 % 
 \NeedsTeXFormat{LaTeX2e}[1994/06/01]
 \ProvidesPackage{MyPhysics}
-  [2023/11/08 v0.02 LaTeX package for my own purpose]
+  [17.12.2025 v1.1 LaTeX package for my own purpose]
 \usepackage[bookmarks,hypertexnames=false,debug]{hyperref}
 \usepackage{bookmark}
+\usepackage{cjhebrew}
  
 \newcommand{\qline}{\rule{\linewidth}{1pt}\\}
 \newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
@@ -19,9 +20,12 @@
 \newcommand{\ket}[1]{\left| #1 \right>}
 \newcommand{\braket}[2]{\left< #1 | #2 \right>}
 \newcommand{\ave}[1]{\left< #1 \right>}
+\newcommand{\com}[2]{\left[ #1 , #2 \right]}
+\newcommand{\chem}[3]{\text{#1}_{#2}^{#3}}
 \newcommand{\qint}{\int_{-\infty}^{\infty}}
 \newcommand{\la}{\mathcal{L}}
 \newcommand{\ra}{\mathcal{S}}
+\newcommand{\assume}{\text{ \<l> }}
 \newcommand{\vphi}{\phi (\vec{x},t)}
 \newcommand{\qPsi}{\Psi (x,t)}
 \newcommand{\kpsi}{\ket{\psi}}
